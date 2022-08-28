@@ -10,7 +10,6 @@ public class Main {
         context.refresh();
 
         //actual code starts here
-
         ((ReportingApp)context.getBean("reportingApp")).generateReport();
     }
 
