@@ -19,7 +19,7 @@ public class SalesInput implements ISalesInput {
     @Override
     public List<Sale> getSales()   {
         // File path is passed as parameter
-        File file = new File("src/main/java/edu/wctc/Implementations/sales.txt");
+        File file = new File("src/main/java/edu/wctc/Files/sales.txt");
 
 
 
