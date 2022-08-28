@@ -25,9 +25,9 @@ public class ManualSalesInput implements ISalesInput {
             System.out.println("What Is the country?");
             String country = scanner.nextLine();
             System.out.println("What was the total amount? (No Tax or Shipping Added)");
-            Double total = Double.parseDouble(scanner.nextLine());
+            double total = Double.parseDouble(scanner.nextLine());
             System.out.println("What was the tax of the total amount?");
-            Double tax = Double.parseDouble(scanner.nextLine());
+            double tax = Double.parseDouble(scanner.nextLine());
             salesList.add(new Sale(fullName,country,total,tax));
             System.out.println("Would you like to add another record?(Y/N)");
             String answer = scanner.nextLine();

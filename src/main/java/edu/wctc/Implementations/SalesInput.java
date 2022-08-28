@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,10 +25,10 @@ public class SalesInput implements ISalesInput {
 
 
         List<Sale> sales = new ArrayList<>();
-        String[] items = new String[0];
+        String[] items;
 
-        try (BufferedReader br = new BufferedReader(new FileReader(file));) {
-            String currentLine = "";
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String currentLine;
 
             while ((currentLine = br.readLine()) != null)
             {
