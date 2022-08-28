@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,11 +17,16 @@ import java.util.List;
 public class SalesInput implements ISalesInput {
 
     @Override
-    public List<Sale> getSales() {
+    public List<Sale> getSales()   {
         // File path is passed as parameter
+        File file = new File("src/main/java/edu/wctc/Implementations/sales.txt");
+
+
+
+
         List<Sale> sales = new ArrayList<>();
         String[] items = new String[0];
-        File file = new File("/Users/hidxlgo/IdeaProjects/Spring_Assignment/src/main/java/edu/wctc/sales.txt");
+
         try (BufferedReader br = new BufferedReader(new FileReader(file));) {
             String currentLine = "";
 

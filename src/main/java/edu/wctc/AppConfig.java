@@ -25,7 +25,7 @@ public class AppConfig {
 
     @Bean
     ISalesInput salesInput(){
-        return new ManualSalesInput();
+        return new SalesInput();
     }
 
 
