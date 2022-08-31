@@ -22,8 +22,6 @@ public class SalesInput implements ISalesInput {
         File file = new File("src/main/java/edu/wctc/Files/sales.txt");
 
 
-
-
         List<Sale> sales = new ArrayList<>();
         String[] items;
 

@@ -17,7 +17,6 @@ public class ReportingApp {
     ISalesReport salesReport;
 
     @Autowired
-
     public ReportingApp(ISalesInput salesInput, IShippingPolicy shippingPolicy,ISalesReport salesReport) {
         this.salesInput = salesInput;
         this.shippingPolicy = shippingPolicy;

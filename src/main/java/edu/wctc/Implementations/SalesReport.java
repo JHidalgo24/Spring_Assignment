@@ -26,7 +26,7 @@ public class SalesReport implements ISalesReport {
             System.out.printf("%-20s", formatter.format(sale.getTotal()));
             System.out.printf("%-20s", formatter.format(sale.getTax()));
             System.out.printf("%-20s", formatter.format(sale.getShipping()));
-            System.out.printf("%-20s%n", formatter.format(sale.getTotal() + sale.getShipping() + sale.getTotal()));
+            System.out.printf("%-20s%n", formatter.format(sale.getTotal() + sale.getShipping() + sale.getTax()));
         }
 
         /*
